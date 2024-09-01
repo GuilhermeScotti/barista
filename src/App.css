@@ -1,0 +1,156 @@
+body {
+  padding: 10%;
+  margin: 0 auto;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.imgCoffee {
+  width: 5%;
+  min-width: 40px;
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin: 0;
+}
+
+h2 {
+  margin: 0 auto;
+  margin-bottom: 1em;
+  text-align: center;
+  justify-content: center;
+}
+
+.orderDiv {
+  font-size: 30px;
+  display: flex;
+  background-color: #aead90;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  min-height: 50px;
+  min-width: 95%;
+  margin: 0;
+  flex-direction: column;
+}
+
+.btnOrder{
+  border-radius: 5px;
+  min-height: 50px;
+  min-width: 50px;
+  margin: 0;
+}
+
+.btnSubmit{
+  border-radius: 5px;
+  min-height: 50px;
+  min-width: 50px;
+  max-width: 150px;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.containerOrder {
+  display: flex;
+  align-items: center;
+  gap: 2px
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.containerRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2em;
+  margin-bottom: 2em;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: auto;
+  position: relative;
+  margin: 5px;
+  padding: 10px;
+}
+
+.container > * {
+  flex: 1; /* All child elements will grow and shrink equally */
+  margin: 5px; /* Optional: Add some margin between items */
+}
+
+/* Media query for smaller viewports */
+@media (max-width: 1000px) {
+  .container,
+  .containerOrder {
+    flex-direction: column;
+    align-items: center; /* Optional: Center align items in the column */
+  }
+}
+
+.miniContainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin: 25px;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px #0003,0 6px 20px #00000030;
+  max-width: 170px;
+  min-width: 150px;
+}
+
+.item {
+    text-align: center;
+    align-content: center;
+    border: 1px solid #646cffaa; 
+    border-radius: 5px;
+    padding: 2em 3em;
+}
+
+.answer-space {
+  background-color: #e2c393;
+  height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: auto;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  clear: both;
+  text-align: center;
+  justify-content: center;
+}
+
+#wrong {
+  background-color: #db5d5d;
+}
+
+#correct {
+  background-color: #5ddb68;
+}
+
+li {
+  text-align: center;
+  background-color: #38382c;
+  border-radius: 5px;
+  list-style: none;
+  margin: 3px;
+  display: list-item;
+  unicode-bidi: isolate;
+}
+.textbox {
+  border-radius: 5px;
+  border: 3px solid #646cffaa;
+  padding: 5px;
+  margin: 5px;
+}
